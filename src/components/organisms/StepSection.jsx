@@ -9,8 +9,7 @@ const StepSection = ({
   step, 
   isExpanded, 
   isCompleted, 
-  onToggle, 
-  onMarkComplete 
+  onToggle 
 }) => {
   const renderContent = (content) => {
     return content.split("\n").map((paragraph, index) => {
@@ -76,21 +75,11 @@ const StepSection = ({
                   </ul>
                 </div>
 
-                <div className="flex items-center justify-between mt-8 pt-6 border-t border-gray-100">
+<div className="flex items-center justify-between mt-8 pt-6 border-t border-gray-100">
                   <div className="flex items-center space-x-2 text-sm text-gray-500">
                     <ApperIcon name="Clock" size={16} />
                     <span>Estimated time: {step.estimatedTime} minutes</span>
                   </div>
-                  
-                  {!isCompleted && (
-                    <Button
-                      onClick={() => onMarkComplete(step.id)}
-                      className="flex items-center space-x-2"
-                    >
-                      <ApperIcon name="Check" size={16} />
-                      <span>Mark as Complete</span>
-                    </Button>
-                  )}
                   
                   {isCompleted && (
                     <div className="flex items-center space-x-2 text-success-600">
