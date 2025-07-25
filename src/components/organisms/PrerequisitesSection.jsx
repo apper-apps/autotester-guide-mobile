@@ -43,9 +43,9 @@ const PrerequisitesSection = ({ prerequisites }) => {
             </div>
 
             <div className="space-y-4">
-              {prerequisites.map((prerequisite) => (
+{prerequisites.map((prerequisite, index) => (
                 <div
-                  key={prerequisite.Id}
+                  key={prerequisite.Id || prerequisite.id || index}
                   className="flex items-start space-x-3 p-3 rounded-lg bg-gray-50 border border-gray-100"
                 >
                   <div className="w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
