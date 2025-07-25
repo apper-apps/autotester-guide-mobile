@@ -37,7 +37,7 @@
     "description": "AI converts test scenarios into detailed automation scripts",
     "icon": "Settings",
     "estimatedTime": 7,
-"content": "**Smart Script Creation**\n• AI turns your test scenarios into ready-to-run automation scripts\n• Each test becomes precise, executable code\n• Complex workflows become simple step-by-step instructions\n\n**Complete Automation Package**\n• Generates everything needed to run tests:\n  • Element selectors that find the right buttons and fields\n  • Test data and expected results\n  • Smart waiting for pages to load\n  • Works across different browsers\n\n**Optimized for Reliability**\n• AI makes scripts stable and efficient\n• Clean, easy-to-read code you can modify\n• Handles flaky elements with smart retry logic\n• Proper test cleanup to avoid conflicts\n\n**Quality Checked**\n• AI reviews every script for completeness\n• Ensures all test steps work as expected\n• Covers your full test scenarios\n• Includes helpful documentation and comments"
+"content": "**Smart Script Creation**\n• AI turns test scenarios into ready-to-run scripts\n• Complex workflows become simple step-by-step code\n\n**Complete Package**\n• Element selectors for buttons and fields\n• Test data and expected results\n• Smart page loading waits\n• Cross-browser compatibility\n\n**Reliable & Clean**\n• Stable, efficient scripts you can modify\n• Smart retry logic for flaky elements\n• Proper test cleanup\n\n**Quality Assured**\n• AI reviews every script for completeness\n• Covers all test scenarios with helpful documentation"
   },
 {
     "Id": 6,
