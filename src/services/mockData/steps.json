@@ -32,12 +32,12 @@
     "content": "**AI Analysis**\n• AI reviews your recording and creates smart test scenarios\n• Processes user actions to build comprehensive tests\n\n**Auto-Generated Tests**\n• Happy path tests for normal user flows\n• Error tests for invalid inputs and edge cases\n• Form validation and navigation tests\n• Cross-browser compatibility checks\n\n**Review & Customize**\n• Check the generated test suite covers your needs\n• Add or modify tests as needed\n• Adjust priorities based on what matters most"
   },
 {
-    "Id": 5,
+"Id": 5,
     "title": "AI Creates Executable Test Steps",
     "description": "Transform test cases into runnable automation",
     "icon": "Settings",
     "estimatedTime": 7,
-    "content": "**Test Case Processing**\n• AI processes each generated test case into executable steps\n• Converts high-level test scenarios into detailed automation scripts\n\n**Detailed Instruction Creation**\n• AI creates comprehensive, step-by-step instructions:\n  • Precise element selectors and interaction methods\n  • Input data variations for different test scenarios\n  • Assertion statements with expected outcomes\n  • Wait conditions for dynamic content loading\n  • Error handling and recovery procedures\n\n**Test Optimization**\n• AI optimizes test steps for:\n  • Reliability across different environments\n  • Efficiency and execution speed\n  • Maintainability and clarity\n  • Proper test isolation and cleanup\n\n**Final Review**\n• Review the complete executable test suite\n• Verify that each test step is clear and actionable\n• Confirm all test scenarios are properly implemented"
+    "content": "**Test Case Processing**\n• AI converts test scenarios into detailed automation scripts\n• Processes each test case into executable steps\n\n**Instruction Creation**\n• Creates step-by-step instructions with:\n  • Element selectors and interaction methods\n  • Input data variations and expected outcomes\n  • Wait conditions and error handling\n\n**Test Optimization**\n• Optimizes for reliability and efficiency\n• Ensures maintainability and proper cleanup\n\n**Final Review**\n• Verify all test steps are clear and actionable\n• Confirm complete test scenario coverage"
   },
 {
     "Id": 6,
