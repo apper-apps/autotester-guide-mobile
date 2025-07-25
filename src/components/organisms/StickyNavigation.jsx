@@ -55,12 +55,12 @@ const StickyNavigation = ({
               </div>
               {/* Desktop Navigation */}
               <div className="hidden lg:flex items-center space-x-2">
-                {steps.map((step) => (
+{steps.map((step) => (
                   <NavigationItem
-                    key={step.id}
+                    key={step.Id}
                     step={step}
-                    isActive={currentStep === parseInt(step.id)}
-                    isCompleted={completedSteps.includes(parseInt(step.id))}
+                    isActive={currentStep === parseInt(step.Id)}
+                    isCompleted={completedSteps.includes(parseInt(step.Id))}
                     onClick={scrollToStep}
                     className="text-xs px-2 py-1"
                   />
@@ -90,12 +90,12 @@ const StickyNavigation = ({
                   className="lg:hidden border-t border-gray-200 py-4 overflow-hidden"
                 >
                   <div className="space-y-2">
-                    {steps.map((step) => (
+{steps.map((step) => (
                       <NavigationItem
-                        key={step.id}
+                        key={step.Id}
                         step={step}
-                        isActive={currentStep === parseInt(step.id)}
-                        isCompleted={completedSteps.includes(parseInt(step.id))}
+                        isActive={currentStep === parseInt(step.Id)}
+                        isCompleted={completedSteps.includes(parseInt(step.Id))}
                         onClick={scrollToStep}
                       />
                     ))}
