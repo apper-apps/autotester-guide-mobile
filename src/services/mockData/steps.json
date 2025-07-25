@@ -13,7 +13,7 @@
     "description": "Capture your complete user workflow",
     "icon": "Video",
     "estimatedTime": 10,
-    "content": "**Start Recording Session**\n• Navigate to your web application in the same browser tab\n• Click the AutoTester extension and press 'Start Recording'\n\n**Perform Complete Workflow**\n• Execute the full user journey you want to test:\n  • Fill out all form fields with realistic data\n  • Click all relevant buttons and navigation links\n  • Complete the entire process from start to finish\n  • Navigate through all pages in your workflow\n\n**Include Test Scenarios**\n• Capture both successful paths and potential error scenarios\n• Test edge cases and boundary conditions\n• Document different user interaction patterns\n\n**Finish Recording**\n• Stop recording when you've completed the full user journey\n• Review the captured actions in the AutoTester interface\n• Verify all critical steps were properly recorded"
+"content": "**Start Recording Session**\n• Open your web app in the same browser tab\n• Click AutoTester extension and press 'Start Recording'\n\n**Perform Complete Workflow**\n• Fill out all forms with realistic data\n• Click all buttons and navigation links\n• Complete the full process from start to finish\n\n**Include Test Scenarios**\n• Test both success and error scenarios\n• Try edge cases and different user patterns\n\n**Finish Recording**\n• Stop recording when done\n• Review captured actions in AutoTester\n• Verify all critical steps were recorded"
   },
 {
     "Id": 3,
