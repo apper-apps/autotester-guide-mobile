@@ -1,18 +1,17 @@
 [
   {
     "id": 1,
-    "text": "Chrome browser installed and updated to the latest version"
+    "title": "Chrome Browser Required",
+    "description": "AutoTester currently supports Chrome only"
   },
   {
     "id": 2,
-    "text": "Web application URL ready and accessible for testing"
+    "title": "Your Web App URL",
+    "description": "Have the application you want to test ready"
   },
   {
     "id": 3,
-    "text": "Basic understanding of your application's user workflows"
-  },
-  {
-    "id": 4,
-    "text": "Test data or sample inputs prepared for form filling"
+    "title": "15 Minutes",
+    "description": "That's all you need to create your first test"
   }
 ]
