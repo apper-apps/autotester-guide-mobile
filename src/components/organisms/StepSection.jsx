@@ -11,14 +11,24 @@ const StepSection = ({
   isCompleted, 
   onToggle 
 }) => {
-  const renderContent = (content) => {
+const renderContent = (content) => {
     return content.split("\n").map((paragraph, index) => {
       if (paragraph.trim() === "") return null;
+      
+      // Handle section headers (text between ** **)
+      if (paragraph.trim().startsWith("**") && paragraph.trim().endsWith("**")) {
+        const headerText = paragraph.trim().slice(2, -2);
+        return (
+          <h4 key={index} className="font-semibold text-gray-900 mt-6 mb-3 first:mt-0 text-lg">
+            {headerText}
+          </h4>
+        );
+      }
       
       // Handle bullet points
       if (paragraph.trim().startsWith("•") || paragraph.trim().startsWith("-")) {
         return (
-          <li key={index} className="ml-4 text-gray-700">
+          <li key={index} className="ml-4 text-gray-700 mb-2">
             {paragraph.trim().substring(1).trim()}
           </li>
         );
@@ -27,7 +37,7 @@ const StepSection = ({
       // Handle sub-bullets
       if (paragraph.trim().startsWith("  •") || paragraph.trim().startsWith("  -")) {
         return (
-          <li key={index} className="ml-8 text-gray-600 text-sm">
+          <li key={index} className="ml-8 text-gray-600 text-sm mb-1">
             {paragraph.trim().substring(1).trim()}
           </li>
         );
@@ -67,14 +77,14 @@ const StepSection = ({
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3 }}
               className="px-6 pb-6 overflow-hidden"
+className="px-6 pb-6 overflow-hidden"
             >
               <div className="border-t border-gray-100 pt-6">
                 <div className="prose max-w-none">
-                  <ul className="space-y-2">
+                  <div className="space-y-1">
                     {renderContent(step.content)}
-                  </ul>
+                  </div>
                 </div>
-
 <div className="flex items-center justify-between mt-8 pt-6 border-t border-gray-100">
                   <div className="flex items-center space-x-2 text-sm text-gray-500">
                     <ApperIcon name="Clock" size={16} />
