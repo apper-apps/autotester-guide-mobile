@@ -34,10 +34,10 @@
 {
 "Id": 5,
     "title": "AI Creates Executable Test Steps",
-    "description": "Transform test cases into runnable automation",
+    "description": "AI converts test scenarios into detailed automation scripts",
     "icon": "Settings",
     "estimatedTime": 7,
-    "content": "**Test Case Processing**\n• AI converts test scenarios into detailed automation scripts\n• Processes each test case into executable steps\n\n**Instruction Creation**\n• Creates step-by-step instructions with:\n  • Element selectors and interaction methods\n  • Input data variations and expected outcomes\n  • Wait conditions and error handling\n\n**Test Optimization**\n• Optimizes for reliability and efficiency\n• Ensures maintainability and proper cleanup\n\n**Final Review**\n• Verify all test steps are clear and actionable\n• Confirm complete test scenario coverage"
+    "content": "**AI Script Conversion**\n• AI converts test scenarios into detailed automation scripts\n• Transforms each test case into precise, executable automation code\n• Processes complex user workflows into step-by-step automation sequences\n\n**Detailed Script Generation**\n• Creates comprehensive automation instructions with:\n  • Precise element selectors and interaction methods\n  • Dynamic input data variations and expected outcomes\n  • Smart wait conditions and robust error handling\n  • Cross-browser compatibility considerations\n\n**Intelligent Optimization**\n• AI optimizes scripts for maximum reliability and efficiency\n• Ensures maintainability with clean, readable automation code\n• Implements proper test isolation and cleanup procedures\n• Adds intelligent retry logic for flaky elements\n\n**Quality Assurance**\n• AI reviews generated scripts for completeness and accuracy\n• Validates all test steps are executable and actionable\n• Confirms comprehensive test scenario coverage\n• Provides detailed script documentation and comments"
   },
 {
     "Id": 6,
