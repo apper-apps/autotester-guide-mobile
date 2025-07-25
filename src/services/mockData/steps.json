@@ -16,12 +16,12 @@
 "content": "**Start Recording Session**\n• Open your web app in the same browser tab\n• Click AutoTester extension and press 'Start Recording'\n\n**Perform Complete Workflow**\n• Fill out all forms with realistic data\n• Click all buttons and navigation links\n• Complete the full process from start to finish\n\n**Include Test Scenarios**\n• Test both success and error scenarios\n• Try edge cases and different user patterns\n\n**Finish Recording**\n• Stop recording when done\n• Review captured actions in AutoTester\n• Verify all critical steps were recorded"
   },
 {
-    "Id": 3,
+"Id": 3,
     "title": "Define Test Validations",
     "description": "Set up checkpoints for your tests",
     "icon": "CheckSquare",
     "estimatedTime": 8,
-    "content": "**Review Recorded Actions**\n• Review your recorded actions step by step\n• Identify critical points that need validation\n\n**Add Verification Points**\n• Set up checkpoints to verify critical elements:\n  • Success messages appear correctly after form submissions\n  • Error messages display as expected for invalid inputs\n  • Required field validations work properly\n  • Page navigation occurs correctly after actions\n  • Data persists properly across page transitions\n\n**Configure Assertions**\n• Set up assertions for:\n  • Element visibility and text content\n  • URL changes and redirects\n  • Form validation behaviors\n  • Loading states and completion indicators\n\n**Test Coverage**\n• Ensure both positive and negative scenarios are covered\n• Validate edge cases and error conditions\n• Confirm all user paths are properly tested"
+    "content": "**Review Your Recording**\n• Go through recorded actions and mark critical validation points\n\n**Set Verification Checkpoints**\n• Success/error messages after form submissions\n• Required field validations and page navigation\n• Data persistence across page transitions\n\n**Configure Test Assertions**\n• Element visibility, text content, and URL changes\n• Form validation behaviors and loading states\n\n**Ensure Complete Coverage**\n• Test both positive and negative scenarios\n• Include edge cases and error conditions"
   },
 {
     "Id": 4,
