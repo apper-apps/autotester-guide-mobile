@@ -5,7 +5,7 @@
     "description": "Get AutoTester ready in your browser",
     "icon": "Download",
     "estimatedTime": 3,
-    "content": "**Chrome Extension Installation**\n• Install the AutoTester Chrome extension from the Chrome Web Store\n• Pin the extension to your browser toolbar for easy access\n\n**Project Setup**\n• Create your first project by clicking the AutoTester icon\n• Enter your project details:\n  • Project name (choose something descriptive)\n  • Application URL (the web app you want to test)\n  • Brief app description (helps AI understand your application)\n\n**Connection Verification**\n• Verify the extension is properly connected to your application\n• Ensure the extension icon shows active status"
+"content": "**Install Extension**\n• Get AutoTester from Chrome Web Store and pin to toolbar\n\n**Create Project**\n• Click AutoTester icon and create new project\n• Add project name, app URL, and brief description\n\n**Verify Connection**\n• Check extension shows active status with your app"
   },
 {
     "Id": 2,
