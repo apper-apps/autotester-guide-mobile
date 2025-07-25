@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import NavigationItem from "@/components/molecules/NavigationItem";
-import ProgressRing from "@/components/atoms/ProgressRing";
 import Button from "@/components/atoms/Button";
 import ApperIcon from "@/components/ApperIcon";
 import { cn } from "@/utils/cn";
@@ -10,8 +9,7 @@ const StickyNavigation = ({
   steps, 
   currentStep, 
   completedSteps, 
-  onStepClick, 
-  totalProgress 
+  onStepClick
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,15 +49,10 @@ const StickyNavigation = ({
         >
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex items-center justify-between py-4">
-              {/* Logo and Progress */}
-              <div className="flex items-center space-x-4">
+{/* Logo */}
+              <div className="flex items-center">
                 <div className="font-bold text-lg gradient-text">AutoTester</div>
-                <div className="hidden sm:flex items-center space-x-2">
-                  <ProgressRing progress={totalProgress} size={32} strokeWidth={3} />
-                  <span className="text-sm text-gray-600">Progress</span>
-                </div>
               </div>
-
               {/* Desktop Navigation */}
               <div className="hidden lg:flex items-center space-x-2">
                 {steps.map((step) => (
@@ -74,11 +67,8 @@ const StickyNavigation = ({
                 ))}
               </div>
 
-              {/* Mobile Menu Button */}
-              <div className="lg:hidden flex items-center space-x-4">
-                <div className="sm:hidden">
-                  <ProgressRing progress={totalProgress} size={28} strokeWidth={3} />
-                </div>
+{/* Mobile Menu Button */}
+              <div className="lg:hidden">
                 <Button
                   variant="ghost"
                   size="sm"

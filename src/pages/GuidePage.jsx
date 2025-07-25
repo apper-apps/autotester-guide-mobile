@@ -132,15 +132,13 @@ const GuidePage = () => {
       {/* Hero Section */}
       <HeroSection onStartGuide={handleStartGuide} />
       
-      {/* Sticky Navigation */}
+{/* Sticky Navigation */}
       <StickyNavigation
         steps={steps}
         currentStep={currentStep}
         completedSteps={completedSteps}
-        totalProgress={totalProgress}
         onStepClick={updateCurrentStep}
       />
-      
       {/* Prerequisites Section */}
       <PrerequisitesSection
         prerequisites={prerequisites}
