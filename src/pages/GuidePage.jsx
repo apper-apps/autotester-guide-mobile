@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import { motion } from "framer-motion";
 import HeroSection from "@/components/organisms/HeroSection";
-import StickyNavigation from "@/components/organisms/StickyNavigation";
 import PrerequisitesSection from "@/components/organisms/PrerequisitesSection";
 import StepSection from "@/components/organisms/StepSection";
 import BestPracticesSection from "@/components/organisms/BestPracticesSection";
@@ -18,15 +17,13 @@ const GuidePage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   
-  // Progress management
+// Progress management
   const {
     completedSteps,
-    currentStep,
     expandedSteps,
     totalProgress,
     markStepComplete,
     toggleStepExpansion,
-    updateCurrentStep,
     isStepCompleted,
     isStepExpanded
   } = useProgress(6);
@@ -101,29 +98,6 @@ const GuidePage = () => {
     });
   };
 
-  // Handle scroll-based current step detection
-  useEffect(() => {
-    const handleScroll = () => {
-      const stepElements = steps.map(step => ({
-        id: step.Id,
-        element: document.getElementById(`step-${step.Id}`)
-      })).filter(item => item.element);
-
-      const scrollPosition = window.scrollY + 200;
-      
-      for (let i = stepElements.length - 1; i >= 0; i--) {
-        const { id, element } = stepElements[i];
-        if (element.offsetTop <= scrollPosition) {
-          updateCurrentStep(id);
-          break;
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [steps, updateCurrentStep]);
-
   if (loading) return <Loading />;
   if (error) return <Error message={error} onRetry={loadData} />;
 
@@ -132,19 +106,11 @@ const GuidePage = () => {
       {/* Hero Section */}
       <HeroSection onStartGuide={handleStartGuide} />
       
-{/* Sticky Navigation */}
-      <StickyNavigation
-        steps={steps}
-        currentStep={currentStep}
-        completedSteps={completedSteps}
-        onStepClick={updateCurrentStep}
-      />
-      {/* Prerequisites Section */}
+{/* Prerequisites Section */}
       <PrerequisitesSection
         prerequisites={prerequisites}
         onTogglePrerequisite={handleTogglePrerequisite}
       />
-      
       {/* Steps Section */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
