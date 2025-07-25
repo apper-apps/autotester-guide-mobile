@@ -1,0 +1,50 @@
+[
+  {
+    "Id": 1,
+    "title": "Install and Set Up",
+    "description": "Get AutoTester ready in your browser",
+    "icon": "Download",
+    "estimatedTime": 3,
+    "content": "• Install the AutoTester Chrome extension from the Chrome Web Store\n• Pin the extension to your browser toolbar for easy access\n• Create your first project by clicking the AutoTester icon\n• Enter your project details:\n  • Project name (choose something descriptive)\n  • Application URL (the web app you want to test)\n  • Brief app description (helps AI understand your application)\n• Verify the extension is properly connected to your application"
+  },
+  {
+    "Id": 2,
+    "title": "Record User Actions",
+    "description": "Capture your complete user workflow",
+    "icon": "Video",
+    "estimatedTime": 10,
+    "content": "• Navigate to your web application in the same browser tab\n• Click the AutoTester extension and press 'Start Recording'\n• Perform the complete user workflow you want to test:\n  • Fill out all form fields with realistic data\n  • Click all relevant buttons and navigation links\n  • Complete the entire process from start to finish\n  • Include both successful paths and potential error scenarios\n  • Navigate through all pages in your workflow\n• Stop recording when you've completed the full user journey\n• Review the captured actions in the AutoTester interface"
+  },
+  {
+    "Id": 3,
+    "title": "Define Test Validations",
+    "description": "Set up checkpoints for your tests",
+    "icon": "CheckSquare",
+    "estimatedTime": 8,
+    "content": "• Review your recorded actions step by step\n• Add verification points to check critical elements:\n  • Success messages appear correctly after form submissions\n  • Error messages display as expected for invalid inputs\n  • Required field validations work properly\n  • Page navigation occurs correctly after actions\n  • Data persists properly across page transitions\n• Set up assertions for:\n  • Element visibility and text content\n  • URL changes and redirects\n  • Form validation behaviors\n  • Loading states and completion indicators\n• Test both positive and negative scenarios"
+  },
+  {
+    "Id": 4,
+    "title": "AI Generates Comprehensive Test Cases",
+    "description": "Let AI create your complete test strategy",
+    "icon": "Bot",
+    "estimatedTime": 5,
+    "content": "• AI analyzes your recording and validation points\n• AI automatically generates complete test scenarios:\n  • Positive test cases for valid inputs and expected user flows\n  • Negative test cases for invalid inputs and error conditions\n  • Edge cases for boundary values and unusual scenarios\n  • Form validation tests for all input fields\n  • Navigation and workflow tests for user journeys\n  • Cross-browser compatibility considerations\n• Review the generated test suite:\n  • Verify test coverage meets your requirements\n  • Check that critical user paths are included\n  • Ensure edge cases are appropriately covered\n• Customize or add additional test scenarios as needed"
+  },
+  {
+    "Id": 5,
+    "title": "AI Creates Executable Test Steps",
+    "description": "Transform test cases into runnable automation",
+    "icon": "Settings",
+    "estimatedTime": 7,
+    "content": "• AI processes each generated test case into executable steps\n• AI creates detailed, step-by-step instructions:\n  • Precise element selectors and interaction methods\n  • Input data variations for different test scenarios\n  • Assertion statements with expected outcomes\n  • Wait conditions for dynamic content loading\n  • Error handling and recovery procedures\n• AI optimizes test steps for:\n  • Reliability across different environments\n  • Efficiency and execution speed\n  • Maintainability and clarity\n  • Proper test isolation and cleanup\n• Review the complete executable test suite\n• Verify that each test step is clear and actionable"
+  },
+  {
+    "Id": 6,
+    "title": "Execute and Monitor",
+    "description": "Run tests and analyze results",
+    "icon": "Play",
+    "estimatedTime": 15,
+    "content": "• Run your complete test suite using AutoTester\n• Monitor test execution in real-time:\n  • Watch tests interact with your application\n  • Observe validation checkpoints being verified\n  • Track progress through the test suite\n• Review comprehensive test results:\n  • Detailed pass/fail status for each test\n  • Screenshots of any failures or issues\n  • Detailed error messages and stack traces\n  • Performance metrics and execution times\n• Analyze results to improve your application:\n  • Identify bugs and inconsistencies\n  • Validate user experience flows\n  • Confirm error handling works correctly\n  • Verify cross-browser compatibility\n• Use insights to fix issues and enhance your application"
+  }
+]

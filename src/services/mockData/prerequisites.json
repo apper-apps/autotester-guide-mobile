@@ -1,0 +1,18 @@
+[
+  {
+    "Id": 1,
+    "text": "Chrome browser installed and updated to the latest version"
+  },
+  {
+    "Id": 2,
+    "text": "Web application URL ready and accessible for testing"
+  },
+  {
+    "Id": 3,
+    "text": "Basic understanding of your application's user workflows"
+  },
+  {
+    "Id": 4,
+    "text": "Test data or sample inputs prepared for form filling"
+  }
+]
