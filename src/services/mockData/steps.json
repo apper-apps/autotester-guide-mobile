@@ -24,12 +24,12 @@
     "content": "**Review Your Recording**\n• Go through recorded actions and mark critical validation points\n\n**Set Verification Checkpoints**\n• Success/error messages after form submissions\n• Required field validations and page navigation\n• Data persistence across page transitions\n\n**Configure Test Assertions**\n• Element visibility, text content, and URL changes\n• Form validation behaviors and loading states\n\n**Ensure Complete Coverage**\n• Test both positive and negative scenarios\n• Include edge cases and error conditions"
   },
 {
-    "Id": 4,
+"Id": 4,
     "title": "AI Generates Comprehensive Test Cases",
     "description": "Let AI create your complete test strategy",
     "icon": "Bot",
     "estimatedTime": 5,
-    "content": "**AI Analysis Process**\n• AI analyzes your recording and validation points\n• Intelligent processing of user interactions and workflows\n\n**Automated Test Generation**\n• AI automatically generates complete test scenarios:\n  • Positive test cases for valid inputs and expected user flows\n  • Negative test cases for invalid inputs and error conditions\n  • Edge cases for boundary values and unusual scenarios\n  • Form validation tests for all input fields\n  • Navigation and workflow tests for user journeys\n  • Cross-browser compatibility considerations\n\n**Test Suite Review**\n• Review the generated test suite:\n  • Verify test coverage meets your requirements\n  • Check that critical user paths are included\n  • Ensure edge cases are appropriately covered\n\n**Customization Options**\n• Customize or add additional test scenarios as needed\n• Fine-tune test parameters and conditions\n• Adjust test priorities based on business requirements"
+    "content": "**AI Analysis**\n• AI reviews your recording and creates smart test scenarios\n• Processes user actions to build comprehensive tests\n\n**Auto-Generated Tests**\n• Happy path tests for normal user flows\n• Error tests for invalid inputs and edge cases\n• Form validation and navigation tests\n• Cross-browser compatibility checks\n\n**Review & Customize**\n• Check the generated test suite covers your needs\n• Add or modify tests as needed\n• Adjust priorities based on what matters most"
   },
 {
     "Id": 5,
