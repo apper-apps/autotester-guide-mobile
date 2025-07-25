@@ -33,23 +33,24 @@ const HeroSection = ({ onStartGuide }) => {
             step-by-step guide. From zero to your first successful test in minutes.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+<div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button
-              size="xl"
+              variant="success"
+              size="xxl"
               onClick={onStartGuide}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-3 btn-large hover:scale-105 transition-transform"
             >
-              <ApperIcon name="PlayCircle" size={20} />
+              <ApperIcon name="PlayCircle" size={24} />
               <span>Start the Guide</span>
             </Button>
             
             <Button
               variant="outline"
-              size="xl"
+              size="xxl"
               onClick={() => document.getElementById("prerequisites").scrollIntoView({ behavior: "smooth" })}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-3 btn-large hover:bg-primary-50 transition-all"
             >
-              <ApperIcon name="ListChecks" size={20} />
+              <ApperIcon name="ListChecks" size={24} />
               <span>Check Prerequisites</span>
             </Button>
           </div>
