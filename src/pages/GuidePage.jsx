@@ -26,10 +26,7 @@ const GuidePage = () => {
     toggleStepExpansion,
     isStepCompleted,
     isStepExpanded
-  } = useProgress(6);
-
-  // Prerequisites state
-  const [prerequisiteChecks, setPrerequisiteChecks] = useLocalStorage("autoTesterPrerequisites", {});
+} = useProgress(6);
 
   // Load data
   const loadData = async () => {
@@ -43,10 +40,7 @@ const GuidePage = () => {
       ]);
       
       setSteps(stepsData);
-      setPrerequisites(prerequisitesData.map(p => ({
-        ...p,
-        isChecked: prerequisiteChecks[p.Id] || false
-      })));
+      setPrerequisites(prerequisitesData);
       
     } catch (err) {
       console.error("Error loading guide data:", err);
@@ -59,27 +53,6 @@ const GuidePage = () => {
   useEffect(() => {
     loadData();
   }, []);
-
-  // Update prerequisites when checks change
-  useEffect(() => {
-    setPrerequisites(prev => prev.map(p => ({
-      ...p,
-      isChecked: prerequisiteChecks[p.Id] || false
-    })));
-  }, [prerequisiteChecks]);
-
-  // Handle prerequisite toggle
-  const handleTogglePrerequisite = (id) => {
-    const newChecks = {
-      ...prerequisiteChecks,
-      [id]: !prerequisiteChecks[id]
-    };
-    setPrerequisiteChecks(newChecks);
-    
-    if (newChecks[id]) {
-      toast.success("Prerequisite completed!", { autoClose: 2000 });
-    }
-  };
 
   // Handle step completion
   const handleMarkStepComplete = (stepId) => {
@@ -109,7 +82,6 @@ const GuidePage = () => {
 {/* Prerequisites Section */}
       <PrerequisitesSection
         prerequisites={prerequisites}
-        onTogglePrerequisite={handleTogglePrerequisite}
       />
       {/* Steps Section */}
       <section className="py-16 px-4">
