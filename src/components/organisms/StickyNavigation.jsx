@@ -47,14 +47,11 @@ const StickyNavigation = ({
           transition={{ duration: 0.3 }}
 className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200"
         >
-          <div className="max-w-7xl mx-auto px-4">
+<div className="max-w-7xl mx-auto px-4">
             <div className="flex items-center justify-between py-4">
 {/* Logo */}
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center">
                 <div className="font-bold text-lg gradient-text">AutoTester</div>
-                <div className="hidden md:flex items-center space-x-4">
-                  <a href="/about" className="text-sm text-gray-600 hover:text-primary-600 transition-colors">About Us</a>
-                </div>
               </div>
               {/* Desktop Navigation */}
               <div className="hidden lg:flex items-center space-x-2">
